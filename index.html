@@ -60,6 +60,12 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:7
 .hero .hl{color:#6FC79F}
 @media(max-width:760px){.hero{background:linear-gradient(0deg,rgba(11,31,24,.95) 20%,rgba(14,59,46,.6) 70%,rgba(14,59,46,.3)),url("hero.jpg") 62% center/cover no-repeat var(--forest)}}
 
+
+section>.wrap{position:relative;z-index:1}
+.pat-right,.pat-left{opacity:.07}
+.ink .pat-left,.work .pat-right{opacity:.12}
+.pat-right{-webkit-mask-image:linear-gradient(90deg,transparent 25%,#000 85%);mask-image:linear-gradient(90deg,transparent 25%,#000 85%)}
+.pat-left{-webkit-mask-image:linear-gradient(270deg,transparent 25%,#000 85%);mask-image:linear-gradient(270deg,transparent 25%,#000 85%)}
 /* stats band */
 .band{background:var(--jade);color:var(--ink)}
 .band .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
@@ -266,6 +272,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 </div>
 
 <section class="light" id="intelligent">
+  <svg class="pattern pat-right" aria-hidden="true"><defs><pattern id="pi" width="160" height="160" patternUnits="userSpaceOnUse"><g class="patmark" data-fg="#0E3B2E" data-bg="#EEF4EF" data-x="10" data-y="10"></g><g class="patmark" data-fg="#0E3B2E" data-bg="#EEF4EF" data-x="90" data-y="90"></g></pattern></defs><rect width="100%" height="100%" fill="url(#pi)"/></svg>
   <div class="wrap reveal">
     <span class="over">What “intelligent solutions” means</span>
     <h2>Experience, multiplied by AI.</h2>
@@ -308,6 +315,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 </section>
 
 <section class="ink" id="approach">
+  <svg class="pattern pat-left" aria-hidden="true"><defs><pattern id="pa" width="160" height="160" patternUnits="userSpaceOnUse"><g class="patmark" data-fg="#3E9B76" data-bg="#0B1F18" data-x="10" data-y="10"></g><g class="patmark" data-fg="#3E9B76" data-bg="#0B1F18" data-x="90" data-y="90"></g></pattern></defs><rect width="100%" height="100%" fill="url(#pa)"/></svg>
   <div class="wrap reveal">
     <span class="over">Our approach</span>
     <h2>From first conversation to <span class="hl">long-term support.</span></h2>
@@ -324,6 +332,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 </section>
 
 <section class="work" id="work">
+  <svg class="pattern pat-right" aria-hidden="true"><defs><pattern id="pw" width="160" height="160" patternUnits="userSpaceOnUse"><g class="patmark" data-fg="#3E9B76" data-bg="#0E3B2E" data-x="10" data-y="10"></g><g class="patmark" data-fg="#3E9B76" data-bg="#0E3B2E" data-x="90" data-y="90"></g></pattern></defs><rect width="100%" height="100%" fill="url(#pw)"/></svg>
   <div class="wrap reveal">
     <div class="case">
       <div>
@@ -405,6 +414,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 </section>
 
 <section class="light" id="team">
+  <svg class="pattern pat-left" aria-hidden="true"><defs><pattern id="pt3" width="160" height="160" patternUnits="userSpaceOnUse"><g class="patmark" data-fg="#0E3B2E" data-bg="#EEF4EF" data-x="10" data-y="10"></g><g class="patmark" data-fg="#0E3B2E" data-bg="#EEF4EF" data-x="90" data-y="90"></g></pattern></defs><rect width="100%" height="100%" fill="url(#pt3)"/></svg>
   <div class="wrap reveal">
     <span class="over">The team</span>
     <h2>Product managers who build.</h2>
@@ -482,7 +492,7 @@ document.querySelectorAll('.mk').forEach(function(el){
   el.style.display='inline-flex';
 });
 document.querySelectorAll('.patmark').forEach(function(g){
-  g.setAttribute('transform','translate(30 30) scale(0.38)');
+  g.setAttribute('transform','translate('+(g.dataset.x||30)+' '+(g.dataset.y||30)+') scale(0.38)');
   g.innerHTML=paths(g.dataset.fg,g.dataset.bg);
 });
 
