@@ -68,12 +68,12 @@ section>.wrap{position:relative;z-index:1}
 .pat-left{-webkit-mask-image:linear-gradient(270deg,rgba(0,0,0,.15) 10%,#000 70%);mask-image:linear-gradient(270deg,rgba(0,0,0,.15) 10%,#000 70%)}
 /* stats band */
 .band{background:var(--jade);color:var(--ink)}
-.band .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.band .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
 .band .s{padding:34px 26px;border-right:1px solid rgba(11,31,24,.18)}
 .band .s:last-child{border-right:0}
-.band b{display:block;font-family:var(--display);font-weight:400;font-size:40px;line-height:1;color:var(--ink)}
+.band b{display:block;font-family:var(--display);font-weight:400;font-size:28px;line-height:1;color:var(--ink)}
 .band span{display:block;margin-top:8px;font-size:14px;font-weight:600;color:var(--forest)}
-@media(max-width:860px){.band .wrap{grid-template-columns:1fr 1fr}.band .s:nth-child(2){border-right:0}.band .s{border-bottom:1px solid rgba(11,31,24,.18)}}
+@media(max-width:860px){.band .wrap{grid-template-columns:1fr}.band .s{border-right:0;border-bottom:1px solid rgba(11,31,24,.18)}}
 
 /* intelligent */
 .light{background:var(--mist);color:var(--ink)}
@@ -179,7 +179,7 @@ section>.wrap{position:relative;z-index:1}
 @keyframes pop{0%,44%{opacity:0;transform:translateY(10px)}52%,92%{opacity:1;transform:none}100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.pin.new,.ring,.job.first,.send::after,.dot,.t1,.flow .dash{animation:none}.dot{display:none}.t1{opacity:1}}
 @media(max-width:920px){.case{grid-template-columns:1fr;gap:20px}}
-.build{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:80px;border:1px solid rgba(169,205,180,.25)}
+.build{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:80px;border:1px solid rgba(169,205,180,.25)}
 .build div{padding:28px 26px;border-right:1px solid rgba(169,205,180,.25)}
 .build div:last-child{border-right:0}
 .build h3{color:#fff;font-size:17px}
@@ -251,9 +251,9 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 <header class="hero" id="top">
   <div class="wrap">
     <div class="copy">
-      <span class="over">Intelligent Solutions</span>
+      <span class="over">Product-led app studio</span>
       <h1>Apps shaped by product thinking, <span class="hl">built with intelligence.</span></h1>
-      <p class="lead">TheMeda designs and builds digital products that work in the real world. We bring more than 30 years of product and IT delivery experience, and put AI to work at every stage, so you get a better product, sooner.</p>
+      <p class="lead">We design and build digital products that work in the real world, combining seasoned product judgement with AI at every stage. You get a better product, sooner.</p>
       <div class="cta">
         <a class="btn ember" href="#approach">See how we work →</a>
         <a class="btn line" href="#work">View our work</a>
@@ -265,18 +265,17 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 <div class="band">
   <div class="wrap">
     <div class="s"><b>30+</b><span>years of product and IT delivery between us</span></div>
-    <div class="s"><b>iOS · Android</b><span>full app lifecycle, roadmap to App Store</span></div>
-    <div class="s"><b>Days</b><span>from idea to a working mockup</span></div>
-    <div class="s"><b>End to end</b><span>requirements, build, launch and support</span></div>
+    <div class="s"><b>iOS · Android · Web</b><span>apps taken from roadmap to release</span></div>
+    <div class="s"><b>Fintech · Insurance · Councils</b><span>sectors we work in</span></div>
   </div>
 </div>
 
 <section class="light" id="intelligent">
   <svg class="pattern pat-right" aria-hidden="true"><defs><pattern id="pi" width="160" height="160" patternUnits="userSpaceOnUse"><g class="patmark" data-fg="#0E3B2E" data-bg="#EEF4EF" data-x="10" data-y="10"></g><g class="patmark" data-fg="#0E3B2E" data-bg="#EEF4EF" data-x="90" data-y="90"></g></pattern></defs><rect width="100%" height="100%" fill="url(#pi)"/></svg>
   <div class="wrap reveal">
-    <span class="over">What “intelligent solutions” means</span>
+    <span class="over">Our edge</span>
     <h2>Experience, multiplied by AI.</h2>
-    <p class="lead">AI is only as good as the judgement guiding it. We pair hard-won product experience with the best of today’s AI tools, using each for what it does best.</p>
+    <p class="lead">AI is only as good as the judgement guiding it. We use each for what it does best.</p>
     <div class="eq">
       <div class="blk b1">
         <div class="k">Our experience</div>
@@ -304,7 +303,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
         <div class="k">The outcome</div>
         <h3>The best result for you</h3>
         <ul>
-          <li>A working version in weeks, not months</li>
+          <li>Faster delivery, without cutting corners</li>
           <li>Decisions made on evidence, not guesswork</li>
           <li>Fewer surprises at launch</li>
           <li>A product your users actually adopt</li>
@@ -319,13 +318,13 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   <div class="wrap reveal">
     <span class="over">Our approach</span>
     <h2>From first conversation to <span class="hl">long-term support.</span></h2>
-    <p class="lead">We have run the full product lifecycle many times over. Here is how we take you from an idea to a product that keeps getting better.</p>
+    <p class="lead">Six steps, with a clear decision point before each stage of investment.</p>
     <div class="steps">
       <div class="step"><div class="n">01</div><h3>Listen</h3><p>We get to the heart of the problem: who it affects, what success looks like, and the constraints that matter, before anything is built.</p></div>
       <div class="step"><div class="n">02</div><h3>Mockup</h3><p>Within days you see a visual mockup of the solution, so you can judge the idea before committing to any spend.</p></div>
-      <div class="step"><div class="n">03</div><h3>Pilot</h3><p>Once the mockup is agreed, we build a working pilot and gather detailed requirements together, so the full solution rests on evidence.</p></div>
-      <div class="step"><div class="n">04</div><h3>Full solution</h3><p>AI-assisted development moves at pace, while every product decision stays firmly in experienced human hands.</p></div>
-      <div class="step"><div class="n">05</div><h3>Launch</h3><p>Thorough testing, every fault logged and fixed, clear guidance for your teams and a calm go-live.</p></div>
+      <div class="step"><div class="n">03</div><h3>Pilot</h3><p>A working pilot proves the idea with real users and shapes the detailed requirements.</p></div>
+      <div class="step"><div class="n">04</div><h3>Full solution</h3><p>With requirements proven by the pilot, we build the complete solution at pace.</p></div>
+      <div class="step"><div class="n">05</div><h3>Launch</h3><p>Thorough testing, clear guidance for your teams and a calm go-live.</p></div>
       <div class="step"><div class="n">06</div><h3>Support &amp; improve</h3><p>We stay with you after launch, supporting users, measuring what works and shaping the next release.</p></div>
     </div>
   </div>
@@ -338,8 +337,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
       <div>
         <span class="over">Our work</span>
         <h2 style="color:#fff">CivicFix: helping councils <span class="hl">fix things faster.</span></h2>
-        <p class="lead">Residents are often first to spot the problems a council needs to know about. CivicFix gives them a simple way to report an issue from their phone, pinned to the exact spot, and gives council teams a clear view of what needs doing.</p>
-        <div class="tags"><span>Mobile app</span><span>Council portal</span><span>Location-aware</span><span>White-label</span></div>
+        <p class="lead">Residents are often first to spot the problems a council needs to fix. CivicFix connects the two.</p>
         <div class="feat">
           <div><i>1</i><p><b>Report in moments</b><span>Burst pipes, power faults, potholes, blocked drains: choose a category, add a photo, and the location is captured for you.</span></p></div>
           <div><i>2</i><p><b>Clear work for council teams</b><span>Reports arrive organised and ready to act on, so teams can plan their week around what matters most.</span></p></div>
@@ -408,7 +406,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
       <div><h3>Public-facing apps</h3><p>Simple, accessible apps for residents, customers and members.</p></div>
       <div><h3>Portals &amp; internal tools</h3><p>Work boards, dashboards and admin tools that teams enjoy using.</p></div>
       <div><h3>Workflow &amp; reporting</h3><p>Replacing spreadsheets and paper with joined-up digital processes.</p></div>
-      <div><h3>Prototypes &amp; MVPs</h3><p>A working version to test an idea with real users, fast.</p></div>
     </div>
   </div>
 </section>
@@ -418,7 +415,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   <div class="wrap reveal">
     <span class="over">The team</span>
     <h2>Product managers who build.</h2>
-    <p class="lead">We have both spent our careers in product and IT delivery, so we understand the whole journey, from taking customer requirements through to implementation and support.</p>
+    <p class="lead">One of us shapes the solution with you; the other builds it. Both of us have run products end to end.</p>
     <div class="people">
       <div class="person">
         <div class="head">
@@ -441,10 +438,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
         </div>
       </div>
     </div>
-    <div class="shared">
-      <div class="q">We’ve sat on both sides of the table.</div>
-      <div class="chain"><span>Customer requirements</span><em>→</em><span>Design</span><em>→</em><span>Build</span><em>→</em><span>Implementation</span><em>→</em><span>Support</span></div>
-    </div>
   </div>
 </section>
 
@@ -458,7 +451,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     </div>
     <div class="cbox">
       <div class="row"><small>Email</small><b><a href="mailto:hello@themeda.co.uk" style="text-decoration:none;border-bottom:1px solid var(--jade)">hello@themeda.co.uk</a></b></div>
-      <div class="row"><small>Contact</small><b>Malcolm Peters &amp; Romain Zamora</b></div>
     </div>
   </div>
 </section>
